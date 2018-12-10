@@ -189,7 +189,7 @@ body {
       z-index: 20;
       transform: scale(1.05);
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
-      outline: 2rem solid #55c57a; }
+      outline: 1px solid #55c57a; }
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.9) translateY(-1.5rem); }
 
@@ -212,11 +212,31 @@ body {
     transform: translateY(-1.5rem) scale(1.03); }
 
 .card {
-  height: 50rem;
-  background-color: orangered;
-  transition: all 0.8s; }
-  .card:hover {
-    transform: rotateY(180deg); }
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 52rem; }
+  .card__side {
+    height: 52rem;
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+    .card__side--front {
+      background-color: #fff; }
+    .card__side--back {
+      transform: rotateY(180deg); }
+      .card__side--back--1 {
+        background-color: red; }
+  .card:hover .card__side--front {
+    -webkit-transform: rotateY(-180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0); }
 
 .header {
   height: 95vh;

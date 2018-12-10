@@ -24,7 +24,7 @@
       z-index: 20;
       transform: scale(1.05);
       box-shadow: 0 2.5rem 4rem rgba($color-black, 0.5);
-      outline: 2rem solid $color-primary;
+      outline: 1px solid $color-primary;
     }
   }
   &:hover &__photo:not(:hover) {

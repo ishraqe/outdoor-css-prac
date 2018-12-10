@@ -1,6 +1,7 @@
 {
   "scripts":{
-    "compress:sass":"node-sass sass/main.scss css/style.css -w"
+    "compress:sass":"node-sass sass/main.scss css/style.css -w",
+    "dev": "compress:sass || live-server"
   },
   "devDependencies": {
     "node-sass": "^4.10.0"

@@ -13,6 +13,21 @@
         <title>Natours | Exciting tours for adventurous people</title>
     </head>
     <body>
+        <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
+            <label for="nav-toggle" class="navigation__button">
+                <span class="navigation__icon"></span>
+            </label>
+            <div class="navigation__background">&nbsp;</div>
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>1</span> About</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>1</span> About</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>1</span> About</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>1</span> About</a></li>
+                </ul>
+            </nav>
+        </div>
         <header class="header">
             <div class="header__logo-box">
                 <img class="header__logo" src="./img/logo-white.png" alt="logo of the app" >
@@ -34,11 +49,11 @@
                 </div>
                 <div class="row">
                     <div class="col-1-of-2">
-                       <h3 class="heading-tertiry u-margin-bottom-small">You will fall in love with nature</h3>
+                       <h3 class="heading-tertiary u-margin-bottom-small">You will fall in love with nature</h3>
                        <p class="paragraph">
                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, ullam libero aut enim hic vero laborum consequuntur non asperiores iure.
                        </p>
-                       <h3 class="heading-tertiry u-margin-bottom-small">You will fall in love with nature</h3>
+                       <h3 class="heading-tertiary u-margin-bottom-small">You will fall in love with nature</h3>
                        <p class="paragraph">
                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, ullam libero aut enim hic vero laborum consequuntur non asperiores iure.
                        </p>
@@ -86,7 +101,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section-tours">
+            <section class="section-tours" id="section-tours">
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">
                         Exciting tours for adventurous people
@@ -119,7 +134,7 @@
                                         <p class="card__price--only">only</p>
                                         <p class="card__price--value">$297</p>
                                     </div>
-                                    <a href="#" class="btn btn--white">Book Now!</a>
+                                    <a href="#popup" class="btn btn--white">Book Now!</a>
                                 </div>
                             </div>
                         </div>
@@ -150,7 +165,7 @@
                                                 <p class="card__price--only">only</p>
                                                 <p class="card__price--value">$497</p>
                                             </div>
-                                            <a href="#" class="btn btn--white">Book Now!</a>
+                                            <a href="#popup" class="btn btn--white">Book Now!</a>
                                         </div>
                                     </div>
                                 </div>
@@ -180,7 +195,7 @@
                                             <p class="card__price--only">only</p>
                                             <p class="card__price--value">$697</p>
                                         </div>
-                                        <a href="#" class="btn btn--white">Book Now!</a>
+                                        <a href="#popup" class="btn btn--white">Book Now!</a>
                                     </div>
                                 </div>
                             </div>
@@ -313,5 +328,22 @@
                 </div>
             </div>
         </footer>
+        <div class="popup" id="popup">
+            <div class="popup__content">
+                <div class="popup__left">
+                    <img src="./img/nat-8.jpg" class="popup__image" alt="">
+                    <img src="./img/nat-9.jpg" class="popup__image" alt="">
+                </div>
+                <div class="popup__right">
+                    <a href="#section-tours" class="popup__close">&times;</a>
+                    <h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>
+                    <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; please read these terms before booking</h3>
+                    <p class="popup__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique nulla aliquet enim tortor at. Magna ac placerat vestibulum lectus mauris ultrices. Justo eget magna fermentum iaculis eu non diam. Augue eget arcu dictum varius duis. Aliquam sem et tortor consequat id porta. Vitae ultricies leo integer malesuada nunc. Nullam eget felis eget nunc lobortis mattis aliquam faucibus. Ornare arcu dui vivamus arcu. Purus sit amet volutpat consequat mauris nunc congue.
+                    </p>
+                    <a href="#" class="btn btn--green">Book now</a>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
